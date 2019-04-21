@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/skirmishSelectionMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/space_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skrimishSelectionMenuTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_dark_gradient"
+            android:gravity="center"
+            android:text="@string/skirmish_slection_menu_title"
+            android:textColor="@android:color/black"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/skirmishChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_light_gradient_small"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/skirmish_choice_text"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/skirmishAnimusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishAnimusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_animus_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishAnimusSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeAnimusButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skirmishAntibyteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishAntibyteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_antibytes_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishAnibyteSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeAntibyteButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skirmishElementalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishElementalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_elementals_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishElementalSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeElementalButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skirmishGrotianLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishGrotianButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_grotians_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishGrotianSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeGrotianButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skirmishHiveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishHiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_hive_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishHiveSwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeHiveButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skirmishHumanityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/skirmishHumanityButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/skirmish_humanity_button"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+
+            <Switch
+                android:id="@+id/skirmishHumanitySwitch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="@string/skirmish_ai_switch"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/byeByeHumanityButton"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_light_gradient_small"
+                android:gravity="center"
+                android:onClick="toggleRace"
+                android:text="@string/skirmish_delete_race_button"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startSkirmishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_light_gradient_small"
+            android:onClick="startSkirmish"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/start_skirmish_button"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

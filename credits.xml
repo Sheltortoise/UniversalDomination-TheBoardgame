@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/creditsLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/creditsPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/credits_title"
+            android:textColor="@android:color/white"
+            android:textSize="110sp" />
+
+        <TextView
+            android:id="@+id/subTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/credits_sub_title_1"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:id="@+id/job_Title_Layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section_J1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="95dp"
+                android:paddingRight="95dp"
+                android:text="@string/credits_section_J1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/section_J2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_section_J2"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/credits_sub_title_2"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:id="@+id/character_Layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section_C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="95dp"
+                android:paddingRight="95dp"
+                android:text="@string/credits_section_C1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/section_C2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_section_C2"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
