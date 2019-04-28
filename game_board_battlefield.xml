@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/containerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sheltoidusa.universaldominationtheboardgame.GameBoardBattlefield">
+
+    <RelativeLayout
+        android:id="@+id/battlefieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transformPivotX="0px"
+        android:transformPivotY="0px"
+        android:background="@drawable/game_board">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/messageBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@android:color/black"
+            android:text="@string/message_board"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/nextPhaseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="872dp"
+            android:layout_marginBottom="527dp"
+            android:background="@drawable/button_light_gradient_small"
+            android:onClick="nextPhase"
+            android:text="@string/next_phase_button_text"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/attacker_die_image"
+            android:layout_width="217dp"
+            android:layout_height="187dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="516dp"
+            android:layout_marginBottom="232dp"
+            android:transformPivotX="0px"
+            android:transformPivotY="0px"
+            android:contentDescription="@string/attacker_die_content_description"
+            app:srcCompat="@drawable/a6_1" />
+
+        <ImageView
+            android:id="@+id/defender_die_image"
+            android:layout_width="217dp"
+            android:layout_height="187dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="232dp"
+            android:transformPivotX="0px"
+            android:transformPivotY="0px"
+            android:contentDescription="@string/defender_die_content_description"
+            app:srcCompat="@drawable/d6_1" />
+
+        <Button
+            android:id="@+id/hideOverlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="521dp"
+            android:background="@drawable/forward_button"
+            android:onClick="toggleOverlay"
+            android:text="@string/hide_button_text" />
+
+        <Button
+            android:id="@+id/topLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="456dp"
+            android:background="@drawable/controller_top_left"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="456dp"
+            android:background="@drawable/controller_up"
+            android:onClick="overlayPressed"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/topRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="456dp"
+            android:background="@drawable/controller_top_right"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="398dp"
+            android:background="@drawable/controller_left"
+            android:onClick="overlayPressed"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="398dp"
+            android:background="@drawable/controller_center"
+            android:onClick="overlayPressed"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="398dp"
+            android:background="@drawable/controller_right"
+            android:onClick="overlayPressed"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/bottomLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="338dp"
+            android:background="@drawable/controller_bottom_left"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="338dp"
+            android:background="@drawable/controller_down"
+            android:onClick="overlayPressed"
+            android:text="@string/button_text" />
+
+        <Button
+            android:id="@+id/bottomRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="338dp"
+            android:background="@drawable/controller_bottom_right"
+            android:text="@string/button_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/raceCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/hideRaceCardsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="855dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/backward_button"
+            android:onClick="toggleRaceCards"
+            android:text="@string/button_text" />
+
+        <ImageButton
+            android:id="@+id/baseRaceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="703dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rc_the_tribute"
+            android:contentDescription="@string/base_race_card_content_description"
+            android:onClick="addUnit"
+            app:srcCompat="@drawable/rc_the_tribute" />
+
+        <ImageButton
+            android:id="@+id/weakUnitRaceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="544dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rc_zombie_horde"
+            android:contentDescription="@string/weak_unit_race_card_content_description"
+            android:onClick="addUnit"
+            app:srcCompat="@drawable/rc_zombie_horde" />
+
+        <ImageButton
+            android:id="@+id/standardUnitRaceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="384dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rc_wraith_swarm"
+            android:contentDescription="@string/standard_unit_race_card_content_description"
+            android:onClick="addUnit"
+            app:srcCompat="@drawable/rc_wraith_swarm" />
+
+        <ImageButton
+            android:id="@+id/strongUnitRaceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="226dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rc_skeleton_legion"
+            android:contentDescription="@string/strong_unit_race_card_content_description"
+            android:onClick="addUnit"
+            app:srcCompat="@drawable/rc_skeleton_legion" />
+
+        <ImageButton
+            android:id="@+id/heroRaceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rc_fade"
+            android:contentDescription="@string/hero_race_card_content_description"
+            android:onClick="addUnit"
+            app:srcCompat="@drawable/rc_fade" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
